@@ -1,0 +1,26 @@
+{
+  "name": "homeseer-easy-api",
+  "version": "1.0.0",
+  "description": "Simplied version of Homeseer's Web API",
+  "main": "app.js",
+  "scripts": {
+    "start": "forever --watch ./app.js",
+    "stop": "forever stop ./app.js",
+    "daemon": "forever start -al homeseer-easy-api.log -o ./logs/homeseer-easy-api_out.log -e ./logs/homeseer-easy-api_error.log ./app.js",
+    "logs": "forever logs -f app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "homeseer"
+  ],
+  "author": "jensbodal@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "forever": "^0.15.3",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4",
+    "unirest": "^0.5.1"
+  }
+}
