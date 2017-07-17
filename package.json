@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Simplied version of Homeseer's Web API",
   "main": "app.js",
+  "repository": "https://github.com/jensbodal/homeseer-easy-api",
   "scripts": {
     "start": "forever --watch ./app.js",
     "stop": "forever stop ./app.js",
